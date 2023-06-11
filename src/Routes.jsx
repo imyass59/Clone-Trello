@@ -12,13 +12,15 @@ export default function Routes() {
   }
     const Pages = {
         Authentication : lazy(() => wait(1000).then(() => import('./pages/Authentication'))),
-        Dashboard : lazy(() => wait(1000).then(() => import('./pages/Dashboard')))
+        Dashboard : lazy(() => wait(1000).then(() => import('./pages/Dashboard'))),
+        NotFound : lazy(() => wait(1000).then(() => import('./pages/404')))
     }
   const routes = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout />}>
             <Route index element={<Pages.Authentication />} /> 
             <Route path='dashboard' element={<Pages.Dashboard />} /> 
+            <Route path='*' element={<Pages.NotFound />} /> 
         </Route>
     )
   )
