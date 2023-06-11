@@ -1,5 +1,5 @@
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0f9e23de-e5da-4609-8c93-0fd943a4a5e5/deploy-status)](https://app.netlify.com/sites/cozy-sfogliatella-779836/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f9e23de-e5da-4609-8c93-0fd943a4a5e5/deploy-status)](https://cozy-sfogliatella-779836.netlify.app/)
 
 
 ## Installation
