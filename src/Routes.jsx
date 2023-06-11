@@ -18,8 +18,8 @@ export default function Routes() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout />}>
-            <Route index element={<Pages.Authentication />} /> 
-            <Route path='dashboard' element={<Pages.Dashboard />} /> 
+            <Route index element={<Pages.Dashboard />} /> 
+            {/*<Route path='dashboard' element={<Pages.Dashboard />} /> */}
             <Route path='*' element={<Pages.NotFound />} /> 
         </Route>
     )

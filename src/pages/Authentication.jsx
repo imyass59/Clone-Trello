@@ -83,10 +83,10 @@ export default function Authentication() {
             </Button>
           </form>
           <p className='flex justify-center items-center flex-col md:flex-row gap-1 break-words'>
-            <span>I dont have account ?</span>
-            <NavLink className={'text-[#0092CA] hover:underline'}>
-              Create account
-            </NavLink>
+            <span>{section==="Login" ? "I dont have account ?" : "Already have account ?"}</span>
+            <button onClick={() => section==="Login" ? setSection("Sign up") : setSection("Login") } className={'text-[#0092CA] hover:underline'}>
+              {section==="Login" ? "Create account" : "Login"}
+            </button>
           </p>
         </div>
       </div>

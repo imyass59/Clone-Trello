@@ -11,12 +11,12 @@ export default function RootLayout() {
     <>
         <div className='w-full h-screen bg-white flex flex-col'>
             {
-              !isAuthPage && 
+              isAuthPage && 
               (<div className='w-full h-[6%]'>
                 <Navbar />
               </div>)
             }
-            <div className={`w-full ${!isAuthPage ? "h-[94%]" : "h-full"}`}>
+            <div className={`w-full ${isAuthPage ? "h-[94%]" : "h-full"}`}>
               <Suspense fallback={<LoadingBox />}>
                 <ContainerBox>
                   <Outlet />
